@@ -1,3 +1,2 @@
-<h1>
-  {{title}}
-</h1>
+<calc-display [value]="calc.registerA"></calc-display>
+<calc-keypad (numberPressed)="handleNumber($event)" (operatorPressed)="handleOperator($event)"></calc-keypad>

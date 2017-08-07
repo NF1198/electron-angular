@@ -1,0 +1,7 @@
+.calc-display {
+    display: block;
+    width: 200px;
+    height: 1.2em;
+    background-color: lightgray;
+    text-align: right;
+}

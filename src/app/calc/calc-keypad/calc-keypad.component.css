@@ -1,0 +1,18 @@
+.calc-keypad button {
+    display: table-cell;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: lightblue;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.calc-keypad .calc-keypad-tall {
+    height: 4.4em;
+}
+
+.calc-keypad .calc-keypad-wide {
+    width: 4.4em;
+}

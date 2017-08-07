@@ -1,0 +1,31 @@
+<table class='calc-keypad' (window:keyup)="onKey($event)">
+  <tbody>
+    <tr>
+      <td><button (click)="handleOperator('clear')">C</button></td>
+      <td><button (click)="handleOperator('/')">/</button></td>
+      <td><button (click)="handleOperator('*')">*</button></td>
+      <td><button (click)="handleOperator('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="handlePressNumber(7)">7</button></td>
+      <td><button (click)="handlePressNumber(8)">8</button></td>
+      <td><button (click)="handlePressNumber(9)">9</button></td>
+      <td rowspan="2"><button (click)="handleOperator('+')" class='calc-keypad-tall'>+</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="handlePressNumber(4)">4</button></td>
+      <td><button (click)="handlePressNumber(5)">5</button></td>
+      <td><button (click)="handlePressNumber(6)">6</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="handlePressNumber(1)">1</button></td>
+      <td><button (click)="handlePressNumber(2)">2</button></td>
+      <td><button (click)="handlePressNumber(3)">3</button></td>
+      <td rowspan="2"><button (click)="handleOperator('enter')" class='calc-keypad-tall'>Ent.</button></td>
+    </tr>
+    <tr>
+      <td colspan="2"><button (click)="handlePressNumber(0)" class='calc-keypad-wide'>0</button></td>
+      <td><button (click)="handleOperator('.')">.</button></td>
+    </tr>
+  </tbody>
+</table>
