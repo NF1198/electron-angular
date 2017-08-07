@@ -1,4 +1,35 @@
-# ElectronCalculator
+# Electron+Angular Calculator
+
+This application demonstrates a simple application using
+[Angular (Angular 2)](https://angular.io/) and
+[Electron](https://electron.atom.io/).
+
+Angular + Electron is a fantastic setup because you can develop interactively in "dev" mode, then build your Angular site (locally) and run in "production" mode, all using Electron to expose the UI. The [Angular CLI](https://cli.angular.io/) pretty much takes out all the guess-work so you can focus on developing your app, not learning how all the tools work.
+
+To use this repository:
+
+* install [npm and node](https://www.npmjs.com/get-npm)
+* clone this repository to your local machine
+* install the Angular CLI and [read the Angular quick-start](https://angular.io/guide/quickstart)
+* read the [Electron quick-start](https://electron.atom.io/docs/tutorial/quick-start/)
+* run `npm update`
+* run `ng serve`, then in another terminal run `npm run start:dev`. The former starts the Angular development server. The latter starts Electron and points it at the development server.
+
+## Building the application
+
+You can also run and test a development build:
+
+* run `ng build`
+* run `electron .` from the project root.
+
+Refer to `package.json` and `main.js` in the project root to see how the electron app is configured for each use-case. The main difference is that in a development build, electron is configured to load `electron-reload`. Beyond that, you can just focus on developing your Angular application.
+
+## References
+
+* [Angular + Electron Music Player](https://scotch.io/tutorials/build-a-music-player-with-angular-2-electron-i-setup-basics-concepts)
+* [PrimeNG](https://www.primefaces.org/primeng/#/)
+
+# From Angular-CLI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
 
